@@ -1,0 +1,233 @@
+
+/*************** Main Page Styles *****************/
+
+/******** Class Styles **********/
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/**** Sidebar ****/
+
+.left-bar {
+  background-color: #7393B3;
+  position: fixed;
+  height: 100vh;
+  width: 23vw;
+}
+
+.side-sec {
+  align-items: center;
+  min-height: 100vh
+}
+
+.side-sub-sec {
+  padding-left: 1%;
+}
+
+/* Headshot and Name */
+
+.headshot-img {
+  width: 54%;
+  position: absolute;
+  right: 28%;
+  top: 2%;
+}
+
+.name-div {
+  color: #fff;
+  padding-top: 70%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.name {
+  font-size: 2.75vw;
+  line-height: 4vh;
+  font-weight: bold;
+}
+
+.name-desc {
+  font-size: 2vw;
+}
+
+/* Menu */
+
+.menu-list {
+  list-style: none;
+  color: #fff;
+  padding-left: 6%;
+  padding-top: 10%;
+}
+
+.menu-item {
+  padding: 2% 0;
+}
+
+.menu-link {
+  color: rgba(255,255,255,.75);
+  font-size: 1.5vw;
+}
+
+.menu-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Social */
+
+.social-div {
+  /* position: absolute; */
+  /* bottom: 10px; */
+  /* left: 5%; */
+  text-align: right;
+  padding-top: 30%;
+  padding-right: 3%;
+}
+
+.social-link {
+  color: #394A59;
+}
+
+.social-link:hover {
+  color: #52616E;
+}
+
+.social-logo {
+  font-size: 3vw;
+  width: 3.5vw;
+}
+
+/**** Main Page ****/
+
+.main-sec {
+  background: #fff;
+  height: 100vh;
+}
+
+.main-title {
+  color: #394A59;
+  font-size: 4vw;
+  padding-left: 5%;
+  padding-top: 2%;
+}
+
+/* About Section */
+
+.about-blurb {
+  padding: 2% 8% 0 5%;
+}
+
+
+/* Portfolio Section */
+
+.port-table {
+  padding: 3% 16% 2% 16%;
+}
+
+.port-logo {
+  font-size: 3.5vw;
+  color: #7393B3;
+}
+
+.port-logo:hover {
+  color: #394A59;
+  text-decoration: none;
+}
+
+.port-title {
+  font-size: 3vw;
+  padding-top: 5%;
+  color: #000000;
+}
+
+.port-title:hover {
+  color: #000000;
+}
+
+
+.port-link:hover {
+  text-decoration: none;
+}
+
+.port-link-1 {
+  padding-left: 17%;
+}
+
+.port-link-2 {
+  padding-left: 16.5%;
+}
+
+
+.port-item {
+  padding-left: 20%;
+}
+
+.port-code {
+  padding-left: 10%;
+}
+
+/* Work Exp Section */
+
+.exp-table {
+  padding: 2% 8% 0 5%;
+}
+
+.exp-img {
+  width: 7vw;
+  height: 7vw;
+}
+
+.exp-title {
+  padding-left: 7%;
+  color: #7393B3;
+  font-size: 1.75vw;
+
+}
+
+.exp-desc {
+  padding-left: 8%;
+  font-size: 1.25vw;
+}
+
+
+/* Contact Section */
+
+.contact-form {
+  padding: 1% 12% 3% 12%;
+}
+
+.sub-title {
+  color: #394A59;
+  font-size: 2vw;
+  padding-left: 12%;
+  padding-top: 2%;
+}
+
+
+/*************** Writing Portfolio Styles *****************/
+
+.page-header {
+  background-color: #7393B3;
+  height: 9vw;
+}
+
+.page-title {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  padding: 2% 0 0 5%;
+  font-size: 5vw;
+}
