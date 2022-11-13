@@ -122,13 +122,35 @@ html, body {
   color: #394A59;
   font-size: 4vw;
   padding-left: 5%;
+}
+
+.sub-title {
+  color: #394A59;
+  font-size: 2.5vw;
+  padding-left: 5%;
   padding-top: 2%;
+  font-weight: 600;
+}
+
+.not-top {
+  padding-top: 5%;
 }
 
 /* About Section */
 
 .about-blurb {
   padding: 2% 8% 0 5%;
+  font-size: 1.1vw;
+}
+
+.edu-title {
+  padding-left: 5%;
+  font-size: 2vw;
+}
+
+.edu-blurb {
+  padding-left: 5%;
+  font-size: 1.25vw;
 }
 
 
@@ -207,15 +229,10 @@ html, body {
 /* Contact Section */
 
 .contact-form {
-  padding: 1% 12% 3% 12%;
+  padding: 1% 12% 3% 5%;
 }
 
-.sub-title {
-  color: #394A59;
-  font-size: 2vw;
-  padding-left: 12%;
-  padding-top: 2%;
-}
+
 
 
 /*************** Writing Portfolio Styles *****************/
