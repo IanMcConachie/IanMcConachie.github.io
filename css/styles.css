@@ -1,6 +1,78 @@
 
 /*************** Main Page Styles *****************/
 
+
+/******** Page-Wide Styles **********/
+
+:root {
+  --blueback: #7393b3;
+  --dark_blue: #394A59;
+}
+
+/** Responsive Menu Settings **/
+
+/** Smaller Screen **/
+@media only screen and (max-width: 900px) {
+  .left-bar {
+    display: none;
+  }
+
+  .headshot-img {
+    display: none;
+  }
+
+  .name {
+    display: none;
+  }
+
+
+  .name-desc {
+    display: none;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .social-div {
+    display: none;
+  }
+
+  .main-sec {
+    padding-left: 20px;
+    padding-top: 30px;
+    position: relative;
+    z-index: 3;
+  }
+
+}
+
+/** Larger Screen **/
+@media only screen and (min-width: 900px) {
+  .top-bar {
+    display: none;
+  }
+
+  .name-top {
+    display: none;
+  }
+
+  .name-desc-top {
+    display: none;
+  }
+
+  .social-div-top {
+    display: none;
+  }
+
+  .main-sec {
+    padding-left: 375px;
+    padding-top: 20px;
+  }
+
+}
+
+
 /******** Class Styles **********/
 
 .row {
@@ -20,57 +92,79 @@ html, body {
 }
 
 
-/**** Sidebar ****/
+/**** Menu Bars ****/
 
 .left-bar {
-  background-color: #7393B3;
+  background-color: var(--blueback);
   position: fixed;
   height: 100vh;
-  width: 23vw;
+  width: 375px;
 }
 
-.side-sec {
-  align-items: center;
-  min-height: 100vh
+.top-bar {
+  background-color: var(--blueback);
+  height: 200px;
+  width: 100%;
 }
 
-.side-sub-sec {
-  padding-left: 1%;
-}
 
 /* Headshot and Name */
 
 .headshot-img {
-  width: 54%;
-  position: absolute;
-  right: 28%;
-  top: 2%;
-}
-
-.name-div {
-  color: #fff;
-  padding-top: 70%;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
+    width: 190px;
+    position: fixed;
+    left: 93px;
+    top: 15px;
 }
 
 .name {
-  font-size: 2.75vw;
-  line-height: 4vh;
-  font-weight: bold;
+  font-size: 2.5em;
+  font-weight: bolder;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  position: fixed;
+  left: 34px;
+  top: 210px;
 }
 
-.name-desc {
-  font-size: 2vw;
+.name-top {
+  font-size: 3em;
+  font-weight: bolder;
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  color: white;
+  left: 10px;
+  top: 10px;
 }
+
+
+.name-desc {
+  font-size: 1.7em;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  position: fixed;
+  left: 60px;
+  top: 255px;
+}
+
+.name-desc-top {
+  font-size: 1.7em;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  position: absolute;
+  left: 10px;
+  top: 70px;
+}
+
 
 /* Menu */
 
 .menu-list {
   list-style: none;
+  position: fixed;
   color: #fff;
-  padding-left: 6%;
-  padding-top: 10%;
+  left: -10px;
+  top: 320px;
 }
 
 .menu-item {
@@ -79,7 +173,7 @@ html, body {
 
 .menu-link {
   color: rgba(255,255,255,.75);
-  font-size: 1.5vw;
+  font-size: 1.6em;
 }
 
 .menu-link:hover {
@@ -90,12 +184,15 @@ html, body {
 /* Social */
 
 .social-div {
-  /* position: absolute; */
-  /* bottom: 10px; */
-  /* left: 5%; */
-  text-align: right;
-  padding-top: 30%;
-  padding-right: 3%;
+  position: fixed;
+  bottom: 10px;
+  left: 245px;
+}
+
+.social-div-top {
+  position: fixed;
+  bottom: 10px;
+  left: 245px;
 }
 
 .social-link {
@@ -107,8 +204,8 @@ html, body {
 }
 
 .social-logo {
-  font-size: 3vw;
-  width: 3.5vw;
+  font-size: 3.4em;
+  width: 1em;
 }
 
 /**** Main Page ****/
@@ -119,16 +216,16 @@ html, body {
 }
 
 .main-title {
-  color: #394A59;
-  font-size: 4vw;
-  padding-left: 5%;
+  color: var(--dark_blue);
+  font-size: 4em;
+  padding-left: 40px;
+  padding-bottom: 5px;
 }
 
 .sub-title {
-  color: #394A59;
-  font-size: 2.5vw;
-  padding-left: 5%;
-  padding-top: 2%;
+  color: var(--dark_blue);
+  font-size: 2.5em;
+  padding-top: 10px;
   font-weight: 600;
 }
 
@@ -139,22 +236,22 @@ html, body {
 /* About Section */
 
 .about-blurb {
-  padding: 2% 8% 0 5%;
-  font-size: 1.1vw;
+  padding-left: 40px;
+  padding-right: 80px;
+  font-size: 1.1em;
 }
 
-.edu-title {
-  padding-left: 5%;
-  font-size: 2vw;
+.abt-subtitle {
+  font-size: 2em;
 }
 
-.edu-blurb {
-  padding-left: 5%;
-  font-size: 1.1vw;
+.abt-txt {
+  font-size: 1.1em;
 }
 
 .about-table {
-  padding: 0 2% 0 2%;
+  padding-left: 40px;
+  padding-right: 100px;
 }
 
 .skills-title {
