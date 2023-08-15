@@ -96,6 +96,7 @@ body {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    background-color: var(--blueback);
 }
 
 
@@ -195,6 +196,12 @@ html, body {
 .menu-link {
   color: rgba(255,255,255,.75);
   font-size: 1.6em;
+  border: none;
+  background: none;
+}
+
+.menu-link:focus {
+  outline: none;
 }
 
 .menu-link-top {
@@ -309,7 +316,7 @@ html, body {
 /* Portfolio Section */
 
 .port-table {
-  padding-left: 100px;
+  padding-left: 120px;
   padding-top: 40px;
   padding-right: 100px;
 }
@@ -355,6 +362,7 @@ html, body {
 .exp-table {
   padding-left: 80px;
   padding-right: 40px;
+  padding-top: 20px;
 }
 
 .exp-col {
@@ -364,7 +372,7 @@ html, body {
 .exp-img {
   width: 100px;
   height: 100px;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
   display: inline-block;
   position: absolute;
   top: 0;
@@ -395,12 +403,33 @@ html, body {
 
 /* Contact Section */
 
-.contact-form {
-  padding: 1% 12% 3% 5%;
+.email {
+  text-align: center;
 }
 
+.email-title {
+  padding-top: 20px;
+  font-size: 2em;
+  font-weight: 600;
+  color: var(--dark_blue);
+  align-self: center;
+}
+
+/* Footer */
 
 
+.foot {
+  margin-top: 60px;
+  height: 50px;
+  background-color: white;
+  text-align: right;
+}
+
+.foot-txt {
+  color: black;
+  padding-right: 20px;
+  padding-top: 20px;
+}
 
 /*************** Portfolio Page Styles *****************/
 

@@ -5,7 +5,11 @@
   <meta charset="utf-8">
   <title>Ian McConachie</title>
 
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- jQuery -->
+  <script src="jquery-3.6.4.min.js"></script>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -19,7 +23,10 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet"> 
+
+  <!-- Custom JS -->
+  <script src="js/primary.js"></script>
 
 </head>
 
@@ -35,16 +42,16 @@
     <div class="menu-div">
       <ul class="menu-list">
         <li class="menu-item">
-          <a href="#about-me" class="menu-link">About Me</a>
+          <button onclick="scroller('about-me')" class="menu-link">About Me</button>
         </li>
         <li class="menu-item">
-          <a href="#portfolio" class="menu-link">Portfolio</a>
+          <button onclick="scroller('portfolio')" class="menu-link">Portfolio</button>
         </li>
         <li class="menu-item">
-          <a href="#work-exp" class="menu-link">Work Experience</a>
+          <button onclick="scroller('work-exp')" class="menu-link">Work Experience</button>
         </li>
         <li class="menu-item">
-          <a href="#contact" class="menu-link">Contact</a>
+          <button onclick="scroller('contact')" class="menu-link">Contact</button>
         </li>
       </ul>
     </div>
@@ -211,8 +218,27 @@
 
       </section>
 
-  </div>
+      <!-- Contact Section -->
+      <section id="contact">
+        <h1 class="main-title not-top">Contact</h1>
+        <p class="about-blurb">There are several ways to get in touch with me. You can message me or make a connection on LinkedIn by clicking the LinkedIn logo on the left. If you want to learn more about the work I've done you can also click the GitHub icon to see some of the coding and technical writing projects I have worked on throughout the years.
+        <br>
+        <br>
+        If you want to get in touch through email, my email is listed below in a spam-proof format. Just to clarify, the word "email" is included in the email address--this has caused much confusion in the past, so I figure I should mention it haha.
+        </p>
+        <div class="email">
+          <h2 class="email-title">email {dot} mcconachie {at} gmail {dot} com</h2>
+        </div>
+      </section>
 
+
+      <section id="footer">
+        <div class="foot">
+          <p class="foot-txt">&copy; Ian McConachie, 2023</p>
+        </div>
+      </section>
+
+  </div>
   
 </body>
 
