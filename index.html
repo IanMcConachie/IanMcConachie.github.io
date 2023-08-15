@@ -5,7 +5,11 @@
   <meta charset="utf-8">
   <title>Ian McConachie</title>
 
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- jQuery -->
+  <script src="jquery-3.6.4.min.js"></script>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -19,46 +23,81 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet"> 
+
+  <!-- Custom JS -->
+  <script src="js/primary.js"></script>
 
 </head>
 
 <body>
+
+  <!-- Left Bar (for larger screens) -->
   <div class="left-bar"></div>
-  <div class="row sticky-bottom">
-    <div class="col side-sec col-lg-3 col-md-3 d-xs-none d-sm-none d-md-block left-col side-sec">
-      <div class="position-fixed side-sub-sec">
-        <img src="images/headshot.png" class="headshot-img" alt="headshot">
-        <div class="name-div">
-          <h2 class="name">Ian McConachie</h2>
-          <h3 class="name-desc">Writer · Programmer</h3>
-        </div>
-        <div class="menu-div">
-          <ul class="menu-list">
-            <li class="menu-item">
-              <a href="#about-me" class="menu-link">About Me</a>
-            </li>
-            <li class="menu-item">
-              <a href="#portfolio" class="menu-link">Portfolio</a>
-            </li>
-            <li class="menu-item">
-              <a href="#work-exp" class="menu-link">Work Experience</a>
-            </li>
-            <li class="menu-item">
-              <a href="#contact" class="menu-link">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="social-div sticky-bottom">
-          <a href="https://www.linkedin.com/in/ian-mcconachie-8b4513243/" class="social-link"><i class="fa-brands fa-linkedin social-logo"></i></a>
-          <a href="https://github.com/IanMcConachie" class="social-link"><i class="fa-brands fa-github social-logo"></i></a>
-        </div>
-      </div>
+    <img src="images/headshot.png" class="headshot-img" alt="headshot">
+    <h2 class="name">Ian McConachie</h2>
+    <h3 class="name-desc">Writer · Programmer</h3>
+
+    <!-- Site Menu -->
+    <div class="menu-div">
+      <ul class="menu-list">
+        <li class="menu-item">
+          <button onclick="scroller('about-me')" class="menu-link">About Me</button>
+        </li>
+        <li class="menu-item">
+          <button onclick="scroller('portfolio')" class="menu-link">Portfolio</button>
+        </li>
+        <li class="menu-item">
+          <button onclick="scroller('work-exp')" class="menu-link">Work Experience</button>
+        </li>
+        <li class="menu-item">
+          <button onclick="scroller('contact')" class="menu-link">Contact</button>
+        </li>
+      </ul>
     </div>
 
-    <div class="col main-sec col-lg-9 col-md-9 col-sm-12">
+    <div class="social-div">
+        <a href="https://www.linkedin.com/in/ian-mcconachie-8b4513243/" class="social-link"><i class="fa-brands fa-linkedin social-logo"></i></a>
+        <a href="https://github.com/IanMcConachie" class="social-link"><i class="fa-brands fa-github social-logo"></i></a>
+    </div>
+  </div>
 
-      <section id="about-me">
+  <!-- Top Bar (for smaller screens) -->
+  <div class="top-bar"></div>
+    <h2 class="name-top">Ian McConachie</h2>
+    <h3 class="name-desc-top">Writer · Programmer</h3>
+
+    <!-- Social Links -->
+    <div class="social-div-top">
+        <a href="https://www.linkedin.com/in/ian-mcconachie-8b4513243/" class="social-link"><i class="fa-brands fa-linkedin social-logo-top"></i></a>
+        <a href="https://github.com/IanMcConachie" class="social-link"><i class="fa-brands fa-github social-logo-top"></i></a>
+    </div>
+
+
+    <!-- Site Menu -->
+    <div class="menu-div">
+      <ul class="menu-list-top">
+        <li class="menu-item-top">
+          <a href="#about-me" class="menu-link-top">About Me</a>
+        </li>
+        <li class="menu-item-top">
+          <a href="#portfolio" class="menu-link-top">Portfolio</a>
+        </li>
+        <li class="menu-item-top">
+          <a href="#work-exp" class="menu-link-top">Work Experience</a>
+        </li>
+        <li class="menu-item-top">
+          <a href="#contact" class="menu-link-top">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main Page -->
+  <div class="main-sec">
+
+    <!-- About Me Section -->
+    <section id="about-me">
         <h1 class="main-title">About Me</h1>
         <p class="about-blurb">
           Hello and welcome to my website! My name is Ian McConachie and I am a student studying math and computer science at the University of Oregon. My expected graduation date is in June 2023, after which I plan to pursue a career in technical writing. I am passionate about technology and science, but also love communicating with people especially through writing. It is my goal to spread interest and curiosity in technology so that I can share what I find so fascinating with the world.
@@ -66,126 +105,141 @@
           Outside the realm of technical writing, I also care deeply about volunteering. I have worked with organizations such as the Oregon Justice Resource Center, FOOD for Lane County, and the Oregon Food Bank. I believe it is important for every individual to try to make a positive impact on the world around them and I am always looking for new ways to help out. In addition to volunteering, my hobbies include photography, hiking/backpacking, and table tennis.
         </p>
 
-        <div class="row about-table">
-          <div class="col col-6">
-            <h2 class="sub-title">Education</h2>
-            <h3 class="edu-title">University of Oregon</h3>
-            <h4 class="edu-blurb"><b>2019-present, Pursuing Bachelor's Degree</b></h4>
-            <h4 class="edu-blurb"><b>Majors:</b> Computer Science, Mathematics</h4>
-            <h4 class="edu-blurb"><b>Current GPA:</b> 4.13</h4>
-            <h4 class="edu-blurb"><b>Expected Graduation</b> June 2023</h4>
-          </div>
-          <div class="col col-6">
-            <h2 class="skills-title">Skills</h2>
-            <h3 class="skills-sub">Technical</h3>
-            <h4 class="skills-blurb">Python, C, C++, HTML, CSS, Bootstrap, Markdown, LaTeX, reStructuredText, Git, Macaulay2, Linux, R, Statistics</h4>
-            <h3 class="skills-sub">Non-Technical</h3>
-            <h4 class="skills-blurb">Writing, Public Speaking, Quick Learning, Interpersonal Communication, Technical Communication, Team Management, Mathematical Reasoning</h4>
-          </div>
+      <div class="row about-table">
+        <div class="col col-6">
+          <h2 class="sub-title">Education</h2>
+          <h3 class="abt-subtitle">University of Oregon</h3>
+          <h4 class="abt-txt"><b>2019-2023, Bachelor's of Science</b></h4>
+          <h4 class="abt-txt"><b>Majors:</b> Computer Science, Mathematics</h4>
+          <h4 class="abt-txt"><b>GPA:</b> 4.10, Summa Cum Laude</h4>
+          <h4 class="abt-txt"><b>Selected Courses:</b> Statistical Methods I-II, Regression and Variance, Scientific and Technical Writing, Machine Learning, Software Methodologies, Secure Software Development</h4>
         </div>
-        
-        
-      </section>
+        <div class="col col-6">
+          <h2 class="sub-title">Skills</h2>
+          <h3 class="abt-subtitle">Technical</h3>
+          <h4 class="abt-txt">Python (PyTorch, NumPy, Matplotlib), R, C++, C, Macaulay2 HTML, CSS, Javascript, LaTeX, Markdown, reStructuredText, Git, Linux</h4>
+          <h3 class="abt-subtitle">Non-Technical</h3>
+          <h4 class="abt-txt">Writing, Public Speaking, Quick Learning, Interpersonal Communication, Technical Communication, Team Management, Mathematical Reasoning</h4>
+        </div>
+      </div>
+    </section>
 
-      <section id="portfolio">
+    <!-- Portfolio Section -->
+    <section id="portfolio">
       <h1 class="main-title not-top">Portfolio</h1>
 
       <div class="row port-table">
         <div class="col col-6 portfolio-col">
           <div class="port-item">
-            <a href="writing.html" class="port-link port-link-1">
-              <i class="fa-solid fa-pencil port-logo"></i>
-              <h3 class="port-title">Writing</h3>
+            <a href="code.html" class="port-link port-link-1">
+              <i class="fa-solid fa-code port-logo"></i>
+              <h3 class="port-title port-code">Code</h3>
             </a>
           </div>
         </div>
         <div class="col col-6 portfolio-col">
           <div class="port-item">
-            <a href="code.html" class="port-link port-link-2">
-              <i class="fa-solid fa-code port-logo"></i>
-              <h3 class="port-title port-code">Code</h3>
+            <a href="writing.html" class="port-link port-link-2">
+              <i class="fa-solid fa-pencil port-logo"></i>
+              <h3 class="port-title port-write">Writing</h3>
             </a>
           </div>
         </div>
       </div>
       </section>
 
-
-
+      <!-- Work Experience Section -->
       <section id="work-exp">
         <h1 class="main-title not-top">Work Experience</h1>
+
+
         <div class="row exp-table">
-          <div class="col col-1">
+          <div class="col col-xl-6 col-lg-12 col-md-6 col-sm-12 col-xs-12">
+            <img src="images/oregon-logo.jpg" class="exp-img" alt="uo-logo">
+
+            <div class="exp-txt">
+              <h4 class="exp-title">Math Discussion Leader</h4>
+              <h5 class="exp-desc">University of Oregon Mathematics, 2023</h5>
+            </div>
+            
+          </div>
+
+          <div class="col col-xl-6 col-lg-12 col-md-6 col-sm-12 col-xs-12">
             <img src="images/intel-logo.png" class="exp-img" alt="intel-logo">
+
+            <div class="exp-txt">
+              <h4 class="exp-title">Technical Writing Intern</h4>
+              <h5 class="exp-desc">Intel, 2022</h5>
+            </div>
+            
           </div>
-          <div class="col col-5"> 
-            <h4 class="exp-title">Technical Writing Intern</h4>
-            <h5 class="exp-desc">Intel, 2022</h5>
-          </div>
-          <div class="col col-1">
+
+          <div class="col col-xl-6 col-lg-12 col-md-6 col-sm-12 col-xs-12">
             <img src="images/oregon-logo.jpg" class="exp-img" alt="uo-logo">
+
+            <div class="exp-txt">
+              <h4 class="exp-title">Undergrad Researcher</h4>
+              <h5 class="exp-desc">University of Oregon Mathematics, 2021</h5>
+            </div>
+            
           </div>
-          <div class="col col-5">
-            <h4 class="exp-title">Undergraduate Researcher</h4>
-            <h5 class="exp-desc">University of Oregon Mathematics, 2021</h5>
-          </div>
-        </div>
-        <div class="row exp-table">
-          <div class="col col-1">
-            <img src="images/oregon-logo.jpg" class="exp-img" alt="uo-logo">
-          </div>
-          <div class="col col-5">
-            <h4 class="exp-title">Math Discussion Leader</h4>
-            <h5 class="exp-desc">University of Oregon Mathematics, 2022</h5>
-          </div>
-          <div class="col col-1">
-            <img src="images/oregon-logo.jpg" class="exp-img" alt="uo-logo">
-          </div>
-          <div class="col col-5">
-            <h4 class="exp-title">Help Desk Technician</h4>
-            <h5 class="exp-desc">Lundquist College of Business, 2021</h5>
-          </div>
-        </div>
-        <div class="row exp-table">
-          <div class="col col-1">
+
+          <div class="col col-xl-6 col-lg-12 col-md-6 col-sm-12 col-xs-12">
             <img src="images/ojrc-logo.jpg" class="exp-img" alt="ojrc-logo">
+
+            <div class="exp-txt">
+              <h4 class="exp-title">Volunteer Intern</h4>
+              <h5 class="exp-desc">Oregon Justice Resource Center, 2021</h5>
+            </div>
+
           </div>
-          <div class="col col-5">
-            <h4 class="exp-title">Volunteer Intern</h4>
-            <h5 class="exp-desc">Oregon Justice Resource Center, 2021</h5>
+
+          <div class="col col-xl-6 col-lg-12 col-md-6 col-sm-12 col-xs-12">
+            <img src="images/oregon-logo.jpg" class="exp-img" alt="uo-logo">
+
+            <div class="exp-txt">
+              <h4 class="exp-title">Help Desk Technician</h4>
+              <h5 class="exp-desc">Lundquist College of Business, 2021</h5>
+            </div>
+
           </div>
-          <div class="col col-1">
+
+          <div class="col col-xl-6 col-lg-12 col-md-6 col-sm-12 col-xs-12">
             <img src="images/bsd-logo.jpg" class="exp-img" alt="bsd-logo">
+
+            <div class="exp-txt">
+              <h4 class="exp-title">Exterior Painter</h4>
+              <h5 class="exp-desc">Beaverton School District, 2020</h5>
+            </div>
+
           </div>
-          <div class="col col-5">
-            <h4 class="exp-title">Exterior Painter</h4>
-            <h5 class="exp-desc">Beaverton School District, 2020</h5>
-          </div>
+          
         </div>
+
       </section>
 
-
-
+      <!-- Contact Section -->
       <section id="contact">
-      <h1 class="main-title not-top">Contact</h1>
-      <p class="about-blurb">There are several ways to get in touch with me. You can message me or make a connection on LinkedIn by clicking the LinkedIn logo on the left. If you want to learn more about the work I've done you can also click the GitHub icon to see some of the coding and technical writing projects I have worked on throughout the years. If you want to send me an email, fill out the form below and I'll get back to you as soon as I can!
-      </p>
-      <h2 class="sub-title">Send Me An Email!</h2>
-      <form class="contact-form">
-        <div class="form-group form-g">
-          <input type="email" class="form-control" placeholder="Email">
+        <h1 class="main-title not-top">Contact</h1>
+        <p class="about-blurb">There are several ways to get in touch with me. You can message me or make a connection on LinkedIn by clicking the LinkedIn logo on the left. If you want to learn more about the work I've done you can also click the GitHub icon to see some of the coding and technical writing projects I have worked on throughout the years.
+        <br>
+        <br>
+        If you want to get in touch through email, my email is listed below in a spam-proof format. Just to clarify, the word "email" is included in the email address--this has caused much confusion in the past, so I figure I should mention it haha.
+        </p>
+        <div class="email">
+          <h2 class="email-title">email {dot} mcconachie {at} gmail {dot} com</h2>
         </div>
-        <div class="form-group form-g">
-          <input class="form-control" placeholder="Subject">
-        </div>
-        <div class="form-group form-g">
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Message"></textarea>
-        </div>
-      </form>
       </section>
 
-    </div>
+
+      <section id="footer">
+        <div class="foot">
+          <p class="foot-txt">&copy; Ian McConachie, 2023</p>
+        </div>
+      </section>
+
   </div>
+  
 </body>
 
 </html>
