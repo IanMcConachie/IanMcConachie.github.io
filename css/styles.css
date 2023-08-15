@@ -12,7 +12,7 @@
 /** Responsive Menu Settings **/
 
 /** Smaller Screen **/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .left-bar {
     display: none;
   }
@@ -52,7 +52,7 @@
 }
 
 /** Larger Screen **/
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1000px) {
   .top-bar {
     display: none;
   }
@@ -309,12 +309,19 @@ html, body {
 /* Portfolio Section */
 
 .port-table {
-  padding: 3% 16% 2% 16%;
+  padding-left: 100px;
+  padding-top: 40px;
+  padding-right: 100px;
+}
+
+.port-col {
+  text-align: center;
 }
 
 .port-logo {
-  font-size: 3.5vw;
+  font-size: 4.5em;
   color: #7393B3;
+  padding-left: 100px;
 }
 
 .port-logo:hover {
@@ -323,62 +330,66 @@ html, body {
 }
 
 .port-title {
-  font-size: 3vw;
-  padding-top: 5%;
-  color: #000000;
-}
-
-.port-title:hover {
-  color: #000000;
+  font-size: 3em;
+  padding-top: 20px;
+  color: var(--dark_blue);
+  font-weight: bolder;
 }
 
 
 .port-link:hover {
   text-decoration: none;
-}
-
-.port-link-1 {
-  padding-left: 17%;
-}
-
-.port-link-2 {
-  padding-left: 16.5%;
-}
-
-.portfolio-col {
-  
-}
-
-
-.port-item {
-  padding-left: 20%;
+  color: var(--dark_blue);
 }
 
 .port-code {
-  padding-left: 10%;
+  padding-left: 89px;
+}
+
+.port-write {
+  padding-left: 49px;
 }
 
 /* Work Exp Section */
 
 .exp-table {
-  padding: 2% 8% 0 5%;
+  padding-left: 80px;
+  padding-right: 40px;
+}
+
+.exp-col {
+  height: 100px;
 }
 
 .exp-img {
-  width: 7vw;
-  height: 7vw;
+  width: 100px;
+  height: 100px;
+  padding-bottom: 5px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.exp-txt {
+  display: inline-block;
+  width: 70%;
+  margin-left: 110px;
+  height: 70%;
+  min-height: 100px;
 }
 
 .exp-title {
-  padding-left: 7%;
-  color: #7393B3;
-  font-size: 1.75vw;
-
+  margin-left: 5px;
+  color: var(--dark_blue);
+  font-size: 1.75em;
+  font-weight: bold;
+  display: grid;
 }
 
 .exp-desc {
-  padding-left: 8%;
-  font-size: 1.25vw;
+  padding-left: 5px;
+  font-size: 1.25em;
+  display: grid;
 }
 
 
