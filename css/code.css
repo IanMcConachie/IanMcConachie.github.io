@@ -9,6 +9,9 @@
 
 /******** Page Styles **********/
 
+
+/** Header **/
+
 .page-header {
   background-color: #7393B3;
   height: 200px;
@@ -18,26 +21,41 @@
 .page-title {
   color: #fff;
   font-family: 'Open Sans', sans-serif;
-  padding: 2% 0 0 5%;
+  padding-left: 10px;
+  padding-top: 10px;
   font-size: 5em;
 }
 
+
+/** Projects **/
+
+.port-row {
+  padding-left: 10%;
+  padding-right: 10%;
+  min-height: 265px;
+}
+
+.port-row:hover .port-title {
+  text-decoration: underline solid;
+}
+
 .port-img-left {
-  width: 300px;
-  height: 300px;
-  display: inline-block;
+  width: 250px;
+  height: 250px;
+  display: inline;
 }
 
 .port-img-right {
-  width: 300px;
-  height: 300px;
-  display: inline-block;
+  width: 250px;
+  height: 250px;
+  display: inline;
 }
 
-.port-row {
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 50px;
+.port-text {
+  display: inline-block;
+  min-height: 300px;
+  width: 50%;
+  padding-left: 10px;
 }
 
 .port-title {
@@ -46,11 +64,26 @@
   font-weight: bolder;
 }
 
+.port-link {
+  color: var(--dark_blue);
+}
+
+.port-link:hover {
+  color: var(--dark_blue);
+}
+
+
 .port-blurb {
   font-size: 1.25em;
 }
 
-.port-text {
-  display: inline-block;
-  height: 300px;
+.port-hr {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 15px;
+  margin-bottom: 30px; 
+  border: none;
+  height: 5px;
+  background-color: var(--dark_blue);
 }
+
