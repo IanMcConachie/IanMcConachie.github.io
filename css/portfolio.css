@@ -18,6 +18,14 @@
   margin-bottom: 20px;
 }
 
+.home-logo {
+  font-size: 3em;
+  color: #394A59;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+}
+
 .page-title {
   color: #fff;
   font-family: 'Open Sans', sans-serif;
