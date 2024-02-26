@@ -49,6 +49,9 @@
     display: inline;
   }
 
+  .duck-pic {
+    display: none;
+  }
 }
 
 /** Larger Screen **/
@@ -173,7 +176,7 @@ html, body {
   position: fixed;
   color: #fff;
   left: -10px;
-  top: 320px;
+  top: 270px;
 }
 
 .menu-list-top {
@@ -185,7 +188,7 @@ html, body {
 }
 
 .menu-item {
- padding-top: 10px;
+ padding-top: 5px;
  padding-left: -10px; 
 }
 
@@ -407,6 +410,39 @@ html, body {
   padding-left: 5px;
   font-size: 1.25em;
   display: grid;
+}
+
+/* Education Section */
+
+.duck-pic {
+  width: 90%;
+  margin-top: 40px;
+}
+
+.edu-div {
+  padding-left: 40px;
+  padding-right: 80px;
+}
+
+.edu-deats {
+  padding-top: 15px;
+}
+
+.edu-big {
+  color: var(--dark_blue);
+  font-size: 1.75em;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+.edu-med {
+  color: var(--dark_blue);
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.edu-med-bold {
+  font-weight: bold;
 }
 
 
