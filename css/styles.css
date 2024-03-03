@@ -414,18 +414,13 @@ html, body {
 
 /* Education Section */
 
-.duck-pic {
-  width: 90%;
-  margin-top: 40px;
+.edu-blurb {
+  margin-top: 20px;
 }
 
 .edu-div {
   padding-left: 40px;
   padding-right: 80px;
-}
-
-.edu-deats {
-  padding-top: 15px;
 }
 
 .edu-big {
