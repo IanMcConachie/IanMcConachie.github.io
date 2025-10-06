@@ -309,21 +309,6 @@ html, body {
   padding-right: 100px;
 }
 
-.skills-title {
-  color: #394A59;
-  font-size: 2.5vw;
-  padding-left: 0;
-  padding-top: 2%;
-  font-weight: 600;
-}
-
-.skills {
-  font-size: 2vw;
-}
-
-.skills-blurb {
-  font-size: 1.1vw;
-}
 
 /* Portfolio Section */
 
@@ -367,6 +352,21 @@ html, body {
 
 .port-write {
   padding-left: 49px;
+}
+
+/* Media Section */
+
+.med-table {
+  padding-left: 40px;
+  padding-right: 80px;
+  padding-top: 20px;
+}
+
+.med-title {
+  color: var(--dark_blue);
+  font-size: 1.75em;
+  font-weight: bold;
+  display: grid;
 }
 
 /* Work Exp Section */
