@@ -268,6 +268,7 @@ html, body {
   background: #fff;
   height: 100vh;
   width: 100%;
+  padding-right: 10%;
 }
 
 .main-title {
@@ -356,17 +357,26 @@ html, body {
 
 /* Media Section */
 
-.med-table {
+.medi-table {
   padding-left: 40px;
   padding-right: 80px;
   padding-top: 20px;
 }
 
-.med-title {
+.medi-title {
   color: var(--dark_blue);
   font-size: 1.75em;
   font-weight: bold;
   display: grid;
+}
+
+.medi-img {
+  width: 100%;
+  height: 100%;
+}
+
+.medi-vid {
+  width: 100%;
 }
 
 /* Work Exp Section */
