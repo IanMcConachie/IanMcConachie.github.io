@@ -371,12 +371,19 @@ html, body {
 }
 
 .medi-img {
+  width: 300px;
+  height: 200px;
+}
+
+.medi-img-2 {
+  margin-top: 50px;
   width: 100%;
-  height: 100%;
+  height: 40%;
 }
 
 .medi-vid {
   width: 100%;
+  height: 200px;
 }
 
 /* Work Exp Section */
@@ -477,7 +484,6 @@ html, body {
 
 .foot-txt {
   color: black;
-  padding-right: 20px;
   padding-top: 20px;
 }
 
