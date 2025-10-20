@@ -376,14 +376,16 @@ html, body {
 }
 
 .medi-img-2 {
-  margin-top: 50px;
-  width: 100%;
-  height: 40%;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 250px;
+  height: 90px;
 }
 
 .medi-vid {
-  width: 100%;
-  height: 200px;
+  width: 250px;
+  height: 175px;
+  margin-left: 20px;
 }
 
 /* Work Exp Section */
@@ -471,19 +473,3 @@ html, body {
   color: var(--dark_blue);
   align-self: center;
 }
-
-/* Footer */
-
-
-.foot {
-  margin-top: 60px;
-  height: 50px;
-  background-color: white;
-  text-align: right;
-}
-
-.foot-txt {
-  color: black;
-  padding-top: 20px;
-}
-
