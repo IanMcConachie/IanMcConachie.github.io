@@ -366,8 +366,15 @@ html, body {
 .medi-title {
   color: var(--dark_blue);
   font-size: 1.75em;
+  line-height: 1.2;
   font-weight: bold;
   display: grid;
+  padding-bottom: 10px;
+}
+
+.medi-title:hover {
+  text-decoration: none;
+  color: var(--dark_blue);
 }
 
 .medi-img {
